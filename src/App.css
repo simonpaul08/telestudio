@@ -139,3 +139,32 @@
 .auth-create {
   margin-top: 1rem;
 }
+
+/* layout - dashboard */
+.layout__dashboard {
+  width: 100%;
+  height: 100dvh;
+  background-color: #229ED9;
+  display: flex;
+  align-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 300px;
+  height: 100%;
+  padding: 4rem 2rem;
+  color: #fff;
+  border: 1px solid;
+}
+.sidebar-header {
+  width: 100%;
+  padding: 1rem;
+}
+.channel-logo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
