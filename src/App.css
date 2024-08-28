@@ -156,6 +156,7 @@
   padding: 4rem 2rem;
   color: #fff;
   border: 1px solid;
+  font-family: 'Poppins', sans-serif;
 }
 .sidebar-header {
   width: 100%;
@@ -167,4 +168,28 @@
   background-color: #fff;
   border-radius: 8px;
   margin-bottom: 1rem;
+}
+.sidebar-primary {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;  
+  margin-bottom: 0.2rem;
+}
+.sidebar-uid {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+.sidebar-nav {
+  padding: 2rem 1rem;
+}
+.side-nav {
+  font-size: 1.35rem;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-bottom: 1.15rem;
+}
+.side-nav.active {
+  opacity: 1;
 }
