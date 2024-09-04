@@ -8,6 +8,8 @@ import NewPassword from './pages/NewPassword'
 import ForgetPassword from './pages/ForgetPassword'
 import DashboardLayout from './layout/DashboardLayout'
 import Dashboard from './pages/Dashboard'
+import Upload from './pages/Upload'
+import Content from './pages/Content'
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
       <Route path='/create-password' element={<NewPassword />} />
       <Route path='/dashboard' element={<DashboardLayout />}>
         <Route index element={<Dashboard />} />
+        <Route path='content' element={<Content />} />
+        <Route path='upload' element={<Upload />} />
       </Route>
     </Routes>
   )
