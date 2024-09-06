@@ -2,10 +2,10 @@ import React from 'react'
 import TrafficSource from '../components/TrafficSource'
 import Upload from "../assets/upload-image.png";
 import { useNavigate } from 'react-router-dom';
-import MovieTile from '../components/MovieTile';
+import { ChartCode } from '../components/ChartCode';
 
+const Analytics = () => {
 
-const Content = () => {
     const navigate = useNavigate();
 
     const handleClickUpload = () => navigate("/dashboard/upload")
@@ -14,11 +14,10 @@ const Content = () => {
             <div className="section-container">
                 <div className="section-left">
                     <div className="section-left-header">
-                        <h3>Content</h3>
+                        <h3>Channel Analytics</h3>
                     </div>
                     <div className="section-left-content">
-                        <MovieTile />
-                        <MovieTile />
+                        <ChartCode />
                     </div>
                 </div>
                 <div className="section-right">
@@ -33,4 +32,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default Analytics

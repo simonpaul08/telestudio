@@ -1,6 +1,35 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
+
+  const sidebarItem = [
+    {
+      name: 'Dashboard',
+      link: '/dashboard'
+    },
+    {
+      name: 'Content',
+      link: '/dashboard/content'
+    },
+    {
+      name: 'Analytics',
+      link: '/dashboard/analytics'
+    },
+    {
+      name: 'Earn',
+      link: '/dashboard/earn'
+    },
+    {
+      name: 'Settings',
+      link: '/dashboard/settings'
+    },
+    {
+      name: 'Send feedback',
+      link: '/dashboard/feedback'
+    },
+  ]
+
   return (
     <div className='sidebar'>
         <div className="sidebar-header">
@@ -9,12 +38,7 @@ const Sidebar = () => {
             <p className='sidebar-uid'>@user_id</p>
         </div>
         <div className="sidebar-nav">
-            <p className='side-nav active'>Dashboard</p>
-            <p className='side-nav'>Content</p>
-            <p className='side-nav'>Analytics</p>
-            <p className='side-nav'>Earn</p>
-            <p className='side-nav'>Settings</p>
-            <p className='side-nav'>Send feedback</p>
+            {sidebarItem?.map(item => (<Link className='side-nav' to={`${item.link}`}>{item.name}</Link>))}
         </div>
     </div>
   )

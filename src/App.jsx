@@ -10,6 +10,8 @@ import DashboardLayout from './layout/DashboardLayout'
 import Dashboard from './pages/Dashboard'
 import Upload from './pages/Upload'
 import Content from './pages/Content'
+import Analytics from './pages/Analytics'
+import Earn from './pages/Earn'
 
 function App() {
 
@@ -25,6 +27,8 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path='content' element={<Content />} />
         <Route path='upload' element={<Upload />} />
+        <Route path='analytics' element={<Analytics />} />
+        <Route path='earn' element={<Earn />} />
       </Route>
     </Routes>
   )
