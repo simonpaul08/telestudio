@@ -590,7 +590,9 @@
 .earn-block-item {
   width: 100%;
   height: 100px;
-  border-right: 1px dashed #D9DEF1;
+  border-right: 2px dashed #D9DEF1;
+  text-align: left;
+  padding: 0 1.5rem;
 }
 .earn-block-item:last-child {
   border-right: none;
@@ -603,4 +605,21 @@
   font-size: 2rem;
   color: #1A2B88;
   margin-bottom: 0.5rem;
+}
+.earn-block-item-foot {
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+/* Feedback */
+.feedback-container {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem 4rem;
+}
+.feedback-form {
+  width: 100%;
+  height: 100%
 }

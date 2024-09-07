@@ -28,6 +28,10 @@ const Sidebar = () => {
       name: 'Send feedback',
       link: '/dashboard/feedback'
     },
+    {
+      name: 'Sign Out',
+      link: '/'
+    },
   ]
 
   return (

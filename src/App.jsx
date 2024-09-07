@@ -12,6 +12,8 @@ import Upload from './pages/Upload'
 import Content from './pages/Content'
 import Analytics from './pages/Analytics'
 import Earn from './pages/Earn'
+import Settings from './pages/Settings'
+import Feedback from './pages/Feedback'
 
 function App() {
 
@@ -29,6 +31,8 @@ function App() {
         <Route path='upload' element={<Upload />} />
         <Route path='analytics' element={<Analytics />} />
         <Route path='earn' element={<Earn />} />
+        <Route path='settings' element={<Settings />} />
+        <Route path='feedback' element={<Feedback />} />
       </Route>
     </Routes>
   )
