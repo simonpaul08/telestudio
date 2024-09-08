@@ -24,8 +24,11 @@ const SidebarProvider = ({ children }) => {
     }
 
     useEffect(() => {
-        const match = location.pathname.match(/[^/]+$/);
-        handleSetTab(match[0])
+        const path = location.pathname;
+        const match = path.match(/[^/]+$/);
+        if(match){
+            handleSetTab(match[0])
+        }
     }, [])
 
     return (
