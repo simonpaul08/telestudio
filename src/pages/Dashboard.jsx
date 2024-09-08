@@ -27,7 +27,7 @@ const Dashboard = () => {
         <div className="section-right">
           <TrafficSource />
           <div className='upload-btn' onClick={handleClickUpload}>
-            <img src={Upload} className='upload-image'/>
+            <img src={Upload} className='upload-image' />
             <h3 className='upload-btn-text'>Upload</h3>
           </div>
         </div>
