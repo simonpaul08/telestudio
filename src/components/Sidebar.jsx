@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSidebarContext } from '../context/SidebarContext'
 import { useAuthContext } from '../context/AuthContext'
@@ -33,7 +33,7 @@ const Sidebar = () => {
     },
     {
       id: 6,
-      name: 'Send feedback',
+      name: 'Feedback',
       link: '/dashboard/feedback'
     },
   ]
@@ -42,7 +42,6 @@ const Sidebar = () => {
   const { currentUser, logout } = useAuthContext();
 
   const handleSignOut = () => {
-    console.log('inside signout');
     logout()
   }
 
